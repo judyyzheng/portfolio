@@ -1,0 +1,395 @@
+/* Master Styles */
+body{
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9px;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9px;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 40px;
+    font-family: Verdana;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper > .left-side > div {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s
+}
+
+.nav-link-wrapper a {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.5s
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid darkslategrey;
+
+}
+
+.nav-link-wrapper:a:hover {
+    color: black;
+    
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+
+.introduction {
+    position: relative;
+}
+
+.introduction-background {
+    height:350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.gallery {
+    position: absolute;
+    top: 19pc;
+    left: 9pc;
+    right: 9pc;
+    display: flex;
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: Verdana;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white
+}
+
+.collection {
+    color: grey;
+    font-weight:lighter;
+    font-family: Verdana;
+    position: absolute;
+    top: 27pc;
+    right: 9pc;
+    display: flex;
+    text-align: right;
+
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    padding-top: 4pc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height:350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.bw-wrapper img {
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    height:350px;
+    width: 100%;
+    transition: 1s;
+}
+
+.bw-wrapper:hover img {
+    opacity: 0;
+}
+
+/* Shop Styles */
+
+.shop-intro {
+    position: relative;
+}
+
+.shop-intro {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.instagram {
+    position: absolute;
+    top:9pc;
+    right: 9pc;
+}
+
+.fa {
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: black;
+    color: white;
+}
+
+.shop {
+    position: absolute;
+    top: 40pc;
+    right: 7pc;
+    display: flex;
+    text-align: right;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: Verdana;
+    color: white
+}
+
+.shop-collection {
+    position: absolute;
+    top: 30pc;
+    right: 7pc;
+    padding-left: 46pc;
+    display: flex;
+    text-align: right;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Verdana;
+    color: grey;
+    text-align: right;
+}
+
+/* SHOP DISPLAY */
+
+.shop-items-wrapper {
+    padding-top:300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .shop-item-wrapper {
+    position: relative;
+  }
+  
+  .shop-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+  }
+  
+  .shop-img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .shop-img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+  }
+  
+  .image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  
+  .shop-img-text-wrapper:hover .subtitle {
+    color: white;
+    font-family: Verdana;
+    font-weight:lighter;
+  }
+  
+  .shop-logo img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+/* SHOP DISPLAY */
+
+
+/* About Page */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+/* Contact */
+
+.contact-me {
+    padding-left: 40px;
+
+}
+
+.contact-info {
+    padding-left: 40px;
+}
+
+/* Lives */
+
+.collection-lives {
+    position: relative;
+    position: absolute;
+    padding-left: 300px;
+    padding-top: 80px;
+}
+
+.box1 {
+    height: 430px;
+    width: 160px;
+	background-color: darkslategray;
+	opacity: 0.5;
+    background-image: linear-gradient(rgb(32, 33, 51), rgb(52, 69, 95));
+    transition: 1s;
+	
+}
+
+.box2 {
+    height: 430px;
+    width: 118px;
+	background-color: darkslategray;
+	opacity: 0.5;
+    background-image: linear-gradient(rgb(235, 145, 123), rgb(145, 103, 124));
+    transition: 1s;
+	
+}
+.box3 {
+    height: 430px;
+    width: 170px;
+	background-color:black;
+	
+}
+
+.grid > .box3 {
+    transition: 5s;
+    background-color: black;
+}
+
+/* Places */
+
+/* The grid: Four equal columns that floats next to each other */
+
+.places-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+.places-column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+.places-column img {
+    width: 200px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+.places-column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+.places-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+.places-container {
+    position: relative;
+    display: none;
+    padding: 20px;
+  }
+  
+  /* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+.places-closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+            <div class="right-side" style="font-family: Verdana; text-transform: uppercase;">
+                <div class="brand">
+                    <div>Judy Zheng</div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="grid" style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; align-items: center;">
+        <div class="box3"></div>
+        <div class="box3"></div>        
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="collection-lives">
+            <p style="text-align: right; font-family: Verdana; font-size: 90px; color:white; opacity: 0.8;">collection. places</p>
+            <p style="text-align: right; font-family: Verdana; font-size: 20px; font-weight:lighter; font-variant:small-caps; color: white; opacity: 0.5;">statics  -  still life. for more information on commissioned pieces please email.</p>
+        </div>
+    </div>
+
+
+<div class="places-gallery">
+    <div class="places-row">
+        <div class="places-column">
+            <img src="Assets/img/Art/Spotlight/Landscape/france.JPG" alt="france" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+          <img src="Assets/img/Art/Spotlight/Landscape/fire.JPG" alt="fire" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+          <img src="Assets/img/Art/Spotlight/Landscape/fishingboat.JPG" alt="fishingboat" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+          <img src="Assets/img/Art/Spotlight/Landscape/forest.JPG" alt="forest" onclick="myFunction(this);">
+        </div>
+      </div>
+      
+      <!-- The expanding image container -->
+      <div class="places-container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="position:absolute; left: 300px; bottom: 60px; width:75%; object-fit:contain; height: 821px;">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+    </div>
+
+
+</div>
+
+<div class="places-gallery">
+    <div class="places-row">
+        <div class="places-column">
+            <img src="Assets/img/Art/Spotlight/Landscape/IMG_5793.JPG" alt="france" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+          <img src="Assets/img/Art/Spotlight/Landscape/arizona.JPG" alt="fire" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+          <img src="Assets/img/Art/Spotlight/Landscape/blockall.JPG" alt="fishingboat" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+          <img src="Assets/img/Art/Spotlight/Landscape/foghorn.JPG" alt="forest" onclick="myFunction(this);">
+        </div>
+        <div class="places-column">
+            <img src="Assets/img/Art/Practice/Good/IMG_0703.jpg" alt="forest" onclick="myFunction(this);">
+          </div>
+          <div class="places-column">
+            <img src="Assets/img/Art/Spotlight/Landscape/circle1.JPG" alt="forest" onclick="myFunction(this);">
+          </div>
+    </div>
+
+
+
+</div>
+    
+<div class="_3oKi4" style="text-align: center; padding-top: 350px;">
+    @2021 by Judy Zheng
+</div>
+
+
+</body> 
+<script>
+    function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    var expandImg2 = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    expandImg2.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+    expandImg2.parentElement.style.display = "block";
+  }
+</script>
+</html>
